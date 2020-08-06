@@ -7,7 +7,6 @@ use wasm_bindgen::prelude::*;
 use cbor_event::{self, de::Deserializer, se::{Serialize, Serializer}};
 use cbor_event::Type as CBORType;
 use cbor_event::Special as CBORSpecial;
-use cardano;
 
 pub mod address;
 pub mod crypto;
@@ -15,7 +14,7 @@ pub mod error;
 pub mod fees;
 pub mod serialization;
 pub mod tx_builder;
-pub mod cardano;
+pub use cardano;
 #[macro_use]
 pub mod utils;
 
