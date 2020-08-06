@@ -14,7 +14,7 @@ pub mod error;
 pub mod fees;
 pub mod serialization;
 pub mod tx_builder;
-pub use cardano;
+pub extern crate cardano;
 #[macro_use]
 pub mod utils;
 
