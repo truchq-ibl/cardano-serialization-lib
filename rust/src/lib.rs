@@ -7,6 +7,7 @@ use wasm_bindgen::prelude::*;
 use cbor_event::{self, de::Deserializer, se::{Serialize, Serializer}};
 use cbor_event::Type as CBORType;
 use cbor_event::Special as CBORSpecial;
+use cardano;
 
 pub mod address;
 pub mod crypto;
@@ -24,7 +25,6 @@ use crypto::*;
 use error::*;
 use utils::*;
 
-pub use cardano::*;
 
 #[wasm_bindgen]
 #[derive(Clone, Debug, Eq, Ord, PartialEq, PartialOrd)]
